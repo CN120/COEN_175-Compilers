@@ -1,0 +1,23 @@
+tar: 		tar -cvf phase1.tar phase1
+
+test script: 	./checksub.sh phase1.tar examples.tar
+
+compile: 	make (make file filename is "makefile")
+
+run: 		./scc (optional: <in.txt >out.txt >error.txt?)
+
+
+
+
+
+
+
+
+
+makefile:
+
+scc:	phase1.cpp
+	g++ -std=c++11 -o scc phase1.cpp
+
+clean:
+	rm -f scc core *.o
